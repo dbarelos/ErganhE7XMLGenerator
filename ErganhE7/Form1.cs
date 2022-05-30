@@ -114,7 +114,7 @@ namespace ErganhE7
 
                 var serializer = new XmlSerializer(typeof(AnaggeliesE7Type));
 
-                using(var sw = new StringWriter())
+                using(var sw = new Utf8StringWriter())
                 {
                     serializer.Serialize(sw, anaggelies);
                     XMLData = sw.ToString();
@@ -174,6 +174,15 @@ namespace ErganhE7
                     File.WriteAllText(saveFileDialog1.FileName, XMLData);
                 }
             }
+        }
+    }
+
+
+    public class Utf8StringWriter : StringWriter
+    {
+        public override Encoding Encoding
+        {
+            get { return Encoding.UTF8; }
         }
     }
 
