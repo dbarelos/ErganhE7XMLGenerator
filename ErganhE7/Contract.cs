@@ -40,16 +40,16 @@ namespace ErganhE7
                 return hmerGennhshs.ToString("dd/MM/yyyy");
             } 
         }
-        public AnaggeliaE7TypeF_sex sex
+        public AnaggeliaE7NTypeF_sex sex
         {
             get
             {
-                if (fylo != null && fylo.ToUpper().Equals("ΓΥΝΑΙΚΑ"))
+                if (fylo != null && (fylo.ToUpper().Equals("ΓΥΝΑΙΚΑ") || fylo.ToUpper().Equals("Θ")))
                 {
-                    return AnaggeliaE7TypeF_sex.female;
+                    return AnaggeliaE7NTypeF_sex.female;
                 }
                 else
-                    return AnaggeliaE7TypeF_sex.male;
+                    return AnaggeliaE7NTypeF_sex.male;
             }
         }
         [Column("ΑΦΜ")]
@@ -115,15 +115,15 @@ namespace ErganhE7
         public string morfosi { get; set; }
         [Column("ΕΙΔΟΣ ΑΠΑΣΧΟΛΗΣΗΣ")]
         public string plhrhs_merikh { get; set; }
-        public AnaggeliaE7TypeF_kathestosapasxolisis kathestosApasxolisis
+        public AnaggeliaE7NTypeF_kathestosapasxolisis kathestosApasxolisis
         {
             get
             {
                 if(plhrhs_merikh != null)
                 {
-                    if (plhrhs_merikh.ToUpper().Contains("ΜΕΙΩΜ") || plhrhs_merikh.ToUpper().Contains("ΩΡΟΜ")) return AnaggeliaE7TypeF_kathestosapasxolisis.merikh;
+                    if (plhrhs_merikh.ToUpper().Contains("ΜΕΙΩΜ") || plhrhs_merikh.ToUpper().Contains("ΩΡΟΜ")) return AnaggeliaE7NTypeF_kathestosapasxolisis.merikh;
                 }
-                return AnaggeliaE7TypeF_kathestosapasxolisis.plhrhs;
+                return AnaggeliaE7NTypeF_kathestosapasxolisis.plhrhs;
             }
         }
         [Column("ΚΩΔΙΚΟΣ ΕΙΔΙΚΟΤΗΤΑΣ ΕΦΚΑ")]
@@ -146,5 +146,8 @@ namespace ErganhE7
 
         [Column("ΜΙΣΘΟΣ")]
         public decimal misthos { get; set; }
+        [Column("ΠΑΡΑΤΗΡΗΣΕΙΣ")]
+        public string comments { get; set; }
+
     }
 }

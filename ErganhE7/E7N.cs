@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using ErganhE7;
 using System.Xml.Serialization;
 
 // 
@@ -21,20 +20,20 @@ using System.Xml.Serialization;
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.yeka.gr/E7")]
-[System.Xml.Serialization.XmlRootAttribute("AnaggeliesE7", Namespace="http://www.yeka.gr/E7", IsNullable=false)]
-public partial class AnaggeliesE7Type {
+[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.yeka.gr/E7N")]
+[System.Xml.Serialization.XmlRootAttribute("AnaggeliesE7N", Namespace="http://www.yeka.gr/E7N", IsNullable=false)]
+public partial class AnaggeliesE7NType {
     
-    private AnaggeliaE7Type[] anaggeliaE7Field;
+    private AnaggeliaE7NType[] anaggeliaE7NField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("AnaggeliaE7", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7Type[] AnaggeliaE7 {
+    [System.Xml.Serialization.XmlElementAttribute("AnaggeliaE7N", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public AnaggeliaE7NType[] AnaggeliaE7N {
         get {
-            return this.anaggeliaE7Field;
+            return this.anaggeliaE7NField;
         }
         set {
-            this.anaggeliaE7Field = value;
+            this.anaggeliaE7NField = value;
         }
     }
 }
@@ -44,8 +43,8 @@ public partial class AnaggeliesE7Type {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.yeka.gr/E7")]
-public partial class AnaggeliaE7Type {
+[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.yeka.gr/E7N")]
+public partial class AnaggeliaE7NType {
     
     private string f_aa_pararthmatosField;
     
@@ -57,18 +56,6 @@ public partial class AnaggeliaE7Type {
     
     private string f_ypiresia_oaedField;
     
-    private string f_ergodotikh_organwshField;
-    
-    private string f_kad_kyriaField;
-    
-    private string f_kad_deyt_1Field;
-    
-    private string f_kad_deyt_2Field;
-    
-    private string f_kad_deyt_3Field;
-    
-    private string f_kad_deyt_4Field;
-    
     private string f_kad_pararthmatosField;
     
     private string f_kallikratis_pararthmatosField;
@@ -77,19 +64,13 @@ public partial class AnaggeliaE7Type {
     
     private string f_onomaField;
     
-    private string f_eponymo_patrosField;
-    
     private string f_onoma_patrosField;
-    
-    private string f_eponymo_mitrosField;
     
     private string f_onoma_mitrosField;
     
-    private string f_topos_gennhshsField;
-    
     private string f_birthdateField;
     
-    private AnaggeliaE7TypeF_sex f_sexField;
+    private AnaggeliaE7NTypeF_sex f_sexField;
     
     private string f_yphkoothtaField;
     
@@ -103,7 +84,7 @@ public partial class AnaggeliaE7Type {
     
     private string f_date_ekdosis_lixiField;
     
-    private AnaggeliaE7TypeF_res_permit_inst f_res_permit_instField;
+    private AnaggeliaE7NTypeF_res_permit_inst f_res_permit_instField;
     
     private string f_res_permit_inst_typeField;
     
@@ -111,7 +92,7 @@ public partial class AnaggeliaE7Type {
     
     private string f_res_permit_inst_lixiField;
     
-    private AnaggeliaE7TypeF_res_permit_ap f_res_permit_apField;
+    private AnaggeliaE7NTypeF_res_permit_ap f_res_permit_apField;
     
     private string f_res_permit_ap_typeField;
     
@@ -119,7 +100,7 @@ public partial class AnaggeliaE7Type {
     
     private string f_res_permit_ap_lixiField;
     
-    private AnaggeliaE7TypeF_res_permit_visa f_res_permit_visaField;
+    private AnaggeliaE7NTypeF_res_permit_visa f_res_permit_visaField;
     
     private string f_res_permit_visa_arField;
     
@@ -127,7 +108,7 @@ public partial class AnaggeliaE7Type {
     
     private string f_res_permit_visa_toField;
     
-    private AnaggeliaE7TypeF_marital_status f_marital_statusField;
+    private AnaggeliaE7NTypeF_marital_status f_marital_statusField;
     
     private string f_arithmos_teknonField;
     
@@ -143,57 +124,15 @@ public partial class AnaggeliaE7Type {
     
     private string f_ar_vivliou_anilikouField;
     
-    private string f_dieythinsiField;
-    
-    private string f_kallikratisField;
-    
-    private string f_tkField;
-    
-    private string f_tilField;
-    
-    private string f_faxField;
-    
-    private string f_emailField;
-    
     private string f_epipedo_morfosisField;
     
-    private AnaggeliaE7TypeF_professional_education f_professional_educationField;
+    private AnaggeliaE7NTypeF_xaraktirismos f_xaraktirismosField;
     
-    private string f_expertise_fieldField;
+    private AnaggeliaE7NTypeF_sxeshapasxolisis f_sxeshapasxolisisField;
     
-    private string f_subject_areaField;
+    private AnaggeliaE7NTypeF_kathestosapasxolisis f_kathestosapasxolisisField;
     
-    private string f_subject_groupField;
-    
-    private string f_education_agencyField;
-    
-    private string f_education_date_fromField;
-    
-    private string f_education_date_toField;
-    
-    private string f_durationField;
-    
-    private string f_education_yearField;
-    
-    private string f_fl1Field;
-    
-    private string f_fl2Field;
-    
-    private string f_fl3Field;
-    
-    private string f_fl4Field;
-    
-    private AnaggeliaE7TypeF_pc f_pcField;
-    
-    private string f_pc_otherField;
-    
-    private AnaggeliaE7TypeF_xaraktirismos f_xaraktirismosField;
-    
-    private AnaggeliaE7TypeF_sxeshapasxolisis f_sxeshapasxolisisField;
-    
-    private AnaggeliaE7TypeF_kathestosapasxolisis f_kathestosapasxolisisField;
-    
-    private AnaggeliaE7TypeF_oros f_orosField;
+    private AnaggeliaE7NTypeF_oros f_orosField;
     
     private string f_eidikothtaField;
     
@@ -206,104 +145,15 @@ public partial class AnaggeliaE7Type {
     private string f_apolysisdateField;
     
     private string f_commentsField;
-
-    private string f_lastdaydateField;
-
-    private AnaggeliaE7TypeF_logosperatosis f_logosperatosisField;
+    
+    private AnaggeliaE7NTypeF_logosperatosis f_logosperatosisField;
     
     private string f_logosperatosiscommentsField;
-    
-    private string f_afm_proswpoyField;
-    
-    private byte[] f_fileField;
     
     private byte[] f_foreign_fileField;
     
     private byte[] f_young_fileField;
-
-    public void initialize()
-    {
-        this.f_rel_protocol = "";
-        this.f_rel_date = "";
-        this.f_ergodotikh_organwsh = "";
-        this.f_kad_deyt_1 = "";
-        this.f_kad_deyt_2 = "";
-        this.f_kad_deyt_3 = "";
-        this.f_kad_deyt_4 = "";
-
-        this.f_eponymo_mitros = "";
-        this.f_eponymo_patros = "";
-        this.f_topos_gennhshs = "";
-        this.f_ekdousa_arxh = "";
-        this.f_date_ekdosis = "";
-        this.f_date_ekdosis_lixi = "";
-        this.f_res_permit_inst_type = "";
-        this.f_res_permit_inst_ar = "";
-        this.f_res_permit_inst_lixi = "";
-        this.f_res_permit_ap_type = "";
-        this.f_res_permit_ap_ar = "";
-        this.f_res_permit_ap_lixi = "";
-        this.f_res_permit_visa_ar = "";
-        this.f_res_permit_visa_from = "";
-        this.f_res_permit_visa_to = "";
-        this.f_doy = "";
-        this.f_amika = "";
-        this.f_code_anergias = "";
-        this.f_ar_vivliou_anilikou = "";
-        this.f_dieythinsi = "";
-        this.f_kallikratis = "";
-        this.f_tk = "";
-        this.f_til = "";
-        this.f_fl1 = "";
-        this.f_fl2 = "";
-        this.f_fl3 = "";
-        this.f_fl4 = "";
-        this.f_fax = "";
-        this.f_expertise_field = "";
-        this.f_pc_other = "";
-        this.f_email = "";
-        this.f_subject_area = "";
-        this.f_subject_group = "";
-        this.f_education_agency = "";
-        this.f_education_date_from = "";
-        this.f_education_date_to = "";
-        this.f_education_year = "";
-        this.f_duration = "";
-        this.f_comments = "";
-        this.f_logosperatosiscomments = "";
-        this.f_file = new byte[] { };
-        this.f_foreign_file = new byte[] { };
-        this.f_young_file = new byte[] { };
-    }
-    //public void copyFromContract(Contract contract)
-    //{
-    //    this.f_afm = contract.afm;
-    //    this.f_eponymo = contract.eponymo;
-    //    this.f_onoma = contract.onoma;
-    //    this.f_onoma_patros = contract.onoma_patros;
-    //    this.f_onoma_mitros = contract.onoma_mitros;
-    //    this.f_birthdate = contract.birthdate;
-    //    this.f_sex = contract.sex;
-    //    this.f_ar_taytothtas = contract.adt;
-    //    this.f_typos_taytothtas = "ΔAT";
-    //    this.f_marital_status = contract.maritalStatus;
-    //    this.f_arithmos_teknon = contract.arithmos_teknon;
-    //    this.f_amka = contract.amka;
-    //    this.f_xaraktirismos = AnaggeliaE7TypeF_xaraktirismos.ypallhlos;
-    //    this.f_sxeshapasxolisis = AnaggeliaE7TypeF_sxeshapasxolisis.orismenoyXronoy;
-    //    this.f_eidikothta = contract.kodikosEidikotitas;
-    //    this.f_apodoxes = contract.misthos.ToString("0.00");
-    //    this.f_proslipsidate = contract.proslipsidate;
-    //    this.f_epipedo_morfosis = contract.epipedo_morfosis;
-
-    //    this.f_apolysisdate = contract.apolysisdate.ToString("dd/MM/yyyy"); 
-    //    this.f_lixisymbashdate = contract.symvatikhHmeromhniaLh3hsSymvashs.ToString("dd/MM/yyyy");
-    //    //this.f_lastdaydate = contract.lastWorkedOnDate.ToString("dd/MM/yyyy");
-    //    this.f_logosperatosis = AnaggeliaE7TypeF_logosperatosis.Item0;
-
-    //    this.f_kathestosapasxolisis = contract.kathestosApasxolisis;
-    //}
-
+    
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string f_aa_pararthmatos {
@@ -361,72 +211,6 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_ergodotikh_organwsh {
-        get {
-            return this.f_ergodotikh_organwshField;
-        }
-        set {
-            this.f_ergodotikh_organwshField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_kad_kyria {
-        get {
-            return this.f_kad_kyriaField;
-        }
-        set {
-            this.f_kad_kyriaField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_kad_deyt_1 {
-        get {
-            return this.f_kad_deyt_1Field;
-        }
-        set {
-            this.f_kad_deyt_1Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_kad_deyt_2 {
-        get {
-            return this.f_kad_deyt_2Field;
-        }
-        set {
-            this.f_kad_deyt_2Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_kad_deyt_3 {
-        get {
-            return this.f_kad_deyt_3Field;
-        }
-        set {
-            this.f_kad_deyt_3Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_kad_deyt_4 {
-        get {
-            return this.f_kad_deyt_4Field;
-        }
-        set {
-            this.f_kad_deyt_4Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string f_kad_pararthmatos {
         get {
             return this.f_kad_pararthmatosField;
@@ -471,34 +255,12 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_eponymo_patros {
-        get {
-            return this.f_eponymo_patrosField;
-        }
-        set {
-            this.f_eponymo_patrosField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string f_onoma_patros {
         get {
             return this.f_onoma_patrosField;
         }
         set {
             this.f_onoma_patrosField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_eponymo_mitros {
-        get {
-            return this.f_eponymo_mitrosField;
-        }
-        set {
-            this.f_eponymo_mitrosField = value;
         }
     }
     
@@ -515,17 +277,6 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_topos_gennhshs {
-        get {
-            return this.f_topos_gennhshsField;
-        }
-        set {
-            this.f_topos_gennhshsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string f_birthdate {
         get {
             return this.f_birthdateField;
@@ -537,7 +288,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_sex f_sex {
+    public AnaggeliaE7NTypeF_sex f_sex {
         get {
             return this.f_sexField;
         }
@@ -614,7 +365,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_res_permit_inst f_res_permit_inst {
+    public AnaggeliaE7NTypeF_res_permit_inst f_res_permit_inst {
         get {
             return this.f_res_permit_instField;
         }
@@ -658,7 +409,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_res_permit_ap f_res_permit_ap {
+    public AnaggeliaE7NTypeF_res_permit_ap f_res_permit_ap {
         get {
             return this.f_res_permit_apField;
         }
@@ -702,7 +453,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_res_permit_visa f_res_permit_visa {
+    public AnaggeliaE7NTypeF_res_permit_visa f_res_permit_visa {
         get {
             return this.f_res_permit_visaField;
         }
@@ -746,7 +497,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_marital_status f_marital_status {
+    public AnaggeliaE7NTypeF_marital_status f_marital_status {
         get {
             return this.f_marital_statusField;
         }
@@ -834,72 +585,6 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_dieythinsi {
-        get {
-            return this.f_dieythinsiField;
-        }
-        set {
-            this.f_dieythinsiField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_kallikratis {
-        get {
-            return this.f_kallikratisField;
-        }
-        set {
-            this.f_kallikratisField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_tk {
-        get {
-            return this.f_tkField;
-        }
-        set {
-            this.f_tkField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_til {
-        get {
-            return this.f_tilField;
-        }
-        set {
-            this.f_tilField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_fax {
-        get {
-            return this.f_faxField;
-        }
-        set {
-            this.f_faxField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_email {
-        get {
-            return this.f_emailField;
-        }
-        set {
-            this.f_emailField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string f_epipedo_morfosis {
         get {
             return this.f_epipedo_morfosisField;
@@ -911,172 +596,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_professional_education f_professional_education {
-        get {
-            return this.f_professional_educationField;
-        }
-        set {
-            this.f_professional_educationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_expertise_field {
-        get {
-            return this.f_expertise_fieldField;
-        }
-        set {
-            this.f_expertise_fieldField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_subject_area {
-        get {
-            return this.f_subject_areaField;
-        }
-        set {
-            this.f_subject_areaField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_subject_group {
-        get {
-            return this.f_subject_groupField;
-        }
-        set {
-            this.f_subject_groupField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_education_agency {
-        get {
-            return this.f_education_agencyField;
-        }
-        set {
-            this.f_education_agencyField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_education_date_from {
-        get {
-            return this.f_education_date_fromField;
-        }
-        set {
-            this.f_education_date_fromField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_education_date_to {
-        get {
-            return this.f_education_date_toField;
-        }
-        set {
-            this.f_education_date_toField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_duration {
-        get {
-            return this.f_durationField;
-        }
-        set {
-            this.f_durationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_education_year {
-        get {
-            return this.f_education_yearField;
-        }
-        set {
-            this.f_education_yearField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_fl1 {
-        get {
-            return this.f_fl1Field;
-        }
-        set {
-            this.f_fl1Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_fl2 {
-        get {
-            return this.f_fl2Field;
-        }
-        set {
-            this.f_fl2Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_fl3 {
-        get {
-            return this.f_fl3Field;
-        }
-        set {
-            this.f_fl3Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_fl4 {
-        get {
-            return this.f_fl4Field;
-        }
-        set {
-            this.f_fl4Field = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_pc f_pc {
-        get {
-            return this.f_pcField;
-        }
-        set {
-            this.f_pcField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_pc_other {
-        get {
-            return this.f_pc_otherField;
-        }
-        set {
-            this.f_pc_otherField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_xaraktirismos f_xaraktirismos {
+    public AnaggeliaE7NTypeF_xaraktirismos f_xaraktirismos {
         get {
             return this.f_xaraktirismosField;
         }
@@ -1087,7 +607,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_sxeshapasxolisis f_sxeshapasxolisis {
+    public AnaggeliaE7NTypeF_sxeshapasxolisis f_sxeshapasxolisis {
         get {
             return this.f_sxeshapasxolisisField;
         }
@@ -1098,7 +618,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_kathestosapasxolisis f_kathestosapasxolisis {
+    public AnaggeliaE7NTypeF_kathestosapasxolisis f_kathestosapasxolisis {
         get {
             return this.f_kathestosapasxolisisField;
         }
@@ -1109,7 +629,7 @@ public partial class AnaggeliaE7Type {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_oros f_oros {
+    public AnaggeliaE7NTypeF_oros f_oros {
         get {
             return this.f_orosField;
         }
@@ -1172,26 +692,21 @@ public partial class AnaggeliaE7Type {
             this.f_apolysisdateField = value;
         }
     }
-
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_comments
-    {
-        get
-        {
-            return this.f_commentsField;
-        }
-        set
-        {
-            this.f_commentsField = value;
-        }
-    }
-
-
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public AnaggeliaE7TypeF_logosperatosis f_logosperatosis {
+    public string f_comments {
+        get {
+            return this.f_commentsField;
+        }
+        set {
+            this.f_commentsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public AnaggeliaE7NTypeF_logosperatosis f_logosperatosis {
         get {
             return this.f_logosperatosisField;
         }
@@ -1208,31 +723,6 @@ public partial class AnaggeliaE7Type {
         }
         set {
             this.f_logosperatosiscommentsField = value;
-        }
-    }
-
-
-
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_afm_proswpoy {
-        get {
-            return this.f_afm_proswpoyField;
-        }
-        set {
-            this.f_afm_proswpoyField = value;
-        }
-    }
-
-
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary")]
-    public byte[] f_file {
-        get {
-            return this.f_fileField;
-        }
-        set {
-            this.f_fileField = value;
         }
     }
     
@@ -1257,28 +747,13 @@ public partial class AnaggeliaE7Type {
             this.f_young_fileField = value;
         }
     }
-
-
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string f_lastdaydate
-    {
-        get
-        {
-            return this.f_lastdaydateField;
-        }
-        set
-        {
-            this.f_lastdaydateField = value;
-        }
-    }
 }
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_sex {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_sex {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("0")]
@@ -1292,8 +767,8 @@ public enum AnaggeliaE7TypeF_sex {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_res_permit_inst {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_res_permit_inst {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("")]
@@ -1311,8 +786,8 @@ public enum AnaggeliaE7TypeF_res_permit_inst {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_res_permit_ap {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_res_permit_ap {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("")]
@@ -1330,8 +805,8 @@ public enum AnaggeliaE7TypeF_res_permit_ap {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_res_permit_visa {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_res_permit_visa {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("")]
@@ -1349,21 +824,21 @@ public enum AnaggeliaE7TypeF_res_permit_visa {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_marital_status {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_marital_status {
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("0")]
     notMarried,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
     married,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("2")]
     divorced,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("3")]
     widowed,
@@ -1372,50 +847,12 @@ public enum AnaggeliaE7TypeF_marital_status {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_professional_education {
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("")]
-    Item,
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_xaraktirismos {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("0")]
-    Item0,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("1")]
-    Item1,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_pc {
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("")]
-    Item,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("0")]
-    Item0,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("1")]
-    Item1,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_xaraktirismos {
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("0")]
-    ergaths,
+    Ergaths,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
@@ -1425,32 +862,32 @@ public enum AnaggeliaE7TypeF_xaraktirismos {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_sxeshapasxolisis {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_sxeshapasxolisis {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
-    orismenoyXronoy,
+    OrismenouXronou,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("2")]
-    symvashErgoy,
+    Ergou,
 }
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_kathestosapasxolisis {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_kathestosapasxolisis {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("0")]
     plhrhs,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
     merikh,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("2")]
     ekperitrophs,
@@ -1459,33 +896,41 @@ public enum AnaggeliaE7TypeF_kathestosapasxolisis {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_oros {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_oros {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("0")]
-    Item0,
+    OXI,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
-    Item1,
+    NAI,
 }
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7")]
-public enum AnaggeliaE7TypeF_logosperatosis {
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.yeka.gr/E7N")]
+public enum AnaggeliaE7NTypeF_logosperatosis {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("0")]
-    Item0,
+    LhxhSympefwnhmenouXronou,
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("1")]
-    Item1,
+    [System.Xml.Serialization.XmlEnumAttribute("3")]
+    Item3,
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("2")]
-    Item2,
+    [System.Xml.Serialization.XmlEnumAttribute("4")]
+    Item4,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("5")]
+    Item5,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("6")]
+    Item6,
 }

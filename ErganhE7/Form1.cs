@@ -17,7 +17,7 @@ namespace ErganhE7
     public partial class Form1 : Form
     {
 
-        private List<AnaggeliaE7Type> list = null;
+        private List<AnaggeliaE7NType> list = null;
         private string XMLData = "";
         public Form1()
         {
@@ -55,20 +55,38 @@ namespace ErganhE7
             column.Name = "Αποδοχές κατά την απόλυση";
             dataGridView1.Columns.Add(column);
 
+            column = new DataGridViewTextBoxColumn();
+            column.DataPropertyName = "f_eidikothta";
+            column.Name = "Ειδικότητα ΕΦΚΑ κατά την πρόσληψη";
+            dataGridView1.Columns.Add(column);
+
             XMLReady(false);
         }
 
-        private AnaggeliaE7Type createE7()
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            AnaggeliaE7Type e7 = new AnaggeliaE7Type();
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaSepe) ||
+                string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaOaed))
+            {
+                MessageBox.Show("Συμπληρώστε πρώτα τις βασικές ρυθμίσεις της εφαρμογής.");
+
+                using (SettingsForm frm = new SettingsForm())
+                {
+                    frm.ShowDialog(this);
+                }
+            }
+        }
+
+        private AnaggeliaE7NType createE7()
+        {
+            var e7 = new AnaggeliaE7NType();
             e7.initialize();
             e7.f_ypiresia_oaed = AppSettings.Default.ypiresia_oaed;
             e7.f_ypiresia_sepe = AppSettings.Default.ypiresia_sepe;
-            e7.f_kad_kyria = AppSettings.Default.kad_kyria;
             e7.f_kallikratis_pararthmatos = AppSettings.Default.kallikratis_pararthmatos;
             e7.f_aa_pararthmatos = AppSettings.Default.aa_pararthmatos;
             e7.f_yphkoothta = AppSettings.Default.yphkoothta;
-            e7.f_afm_proswpoy = AppSettings.Default.afm_proswpoy;
+            //e7.f_afm_proswpoy = AppSettings.Default.afm_proswpoy;
             e7.f_kad_pararthmatos = AppSettings.Default.kad_pararthmatos;
             return e7;
         }
@@ -100,19 +118,19 @@ namespace ErganhE7
                 var items = importer.Take<Contract>(0, 1);
 
 
-                list = new List<AnaggeliaE7Type>();
+                list = new List<AnaggeliaE7NType>();
                 foreach (var item in items)
                 {
-                    AnaggeliaE7Type e7 = createE7();
+                    var e7 = createE7();
                     e7.copyFromContract(item.Value);
                     list.Add(e7);
                 }
 
-                AnaggeliesE7Type anaggelies = new AnaggeliesE7Type();
+                var anaggelies = new AnaggeliesE7NType();
 
-                anaggelies.AnaggeliaE7 = list.ToArray();
+                anaggelies.AnaggeliaE7N = list.ToArray();
 
-                var serializer = new XmlSerializer(typeof(AnaggeliesE7Type));
+                var serializer = new XmlSerializer(typeof(AnaggeliesE7NType));
 
                 using(var sw = new Utf8StringWriter())
                 {
@@ -129,9 +147,21 @@ namespace ErganhE7
             openFile();
         }
 
-        private void exportXML()
+        private bool ValidateApplicationSettings()
         {
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaSepe))
+            {
+                MessageBox.Show("Δεν έχει οριστεί η Υπηρεσία ΣΕΠΕ από τις Ρυθμίσεις.");
+                return false;
+            }
 
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaOaed))
+            {
+                MessageBox.Show("Δεν έχει οριστεί η Υπηρεσία ΟΑΕΔ από τις Ρυθμίσεις.");
+                return false;
+            }
+
+            return true;
         }
 
         private void XMLReady(bool value)
@@ -167,12 +197,23 @@ namespace ErganhE7
 
         private void btnExportXML_Click(object sender, EventArgs e)
         {
-            if(XMLData != "")
+            if (!ValidateApplicationSettings())
+                return;
+
+            if (XMLData != "")
             {
                 if(saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     File.WriteAllText(saveFileDialog1.FileName, XMLData);
                 }
+            }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            using (SettingsForm frm = new SettingsForm())
+            {
+                frm.ShowDialog(this);
             }
         }
     }
