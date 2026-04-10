@@ -88,6 +88,7 @@ namespace ErganhE7
             e7.f_yphkoothta = AppSettings.Default.yphkoothta;
             //e7.f_afm_proswpoy = AppSettings.Default.afm_proswpoy;
             e7.f_kad_pararthmatos = AppSettings.Default.kad_pararthmatos;
+            
             return e7;
         }
 

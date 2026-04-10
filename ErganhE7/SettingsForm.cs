@@ -26,7 +26,7 @@ namespace ErganhE7
             txtKallikraths.Text = Properties.Settings.Default.kallikratisPararthmatos;
             txtAAPararthmatos.Text = Properties.Settings.Default.aaPararthmatos;
             txtYphkoothta.Text = Properties.Settings.Default.yphkoothta;
-            txtKadKyria.Text = Properties.Settings.Default.kadKyria;
+            //txtKadKyria.Text = Properties.Settings.Default.kadKyria;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace ErganhE7
             Properties.Settings.Default.kallikratisPararthmatos = txtKallikraths.Text.Trim();
             Properties.Settings.Default.aaPararthmatos = txtAAPararthmatos.Text.Trim();
             Properties.Settings.Default.yphkoothta = txtYphkoothta.Text.Trim();
-            Properties.Settings.Default.kadKyria = txtKadKyria.Text.Trim();
+            //Properties.Settings.Default.kadKyria = txtKadKyria.Text.Trim();
 
             Properties.Settings.Default.Save();
 

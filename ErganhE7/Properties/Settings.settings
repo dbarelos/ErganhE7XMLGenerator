@@ -8,9 +8,6 @@
     <Setting Name="ypiresiaSepe" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="kadKyria" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="kallikratisPararthmatos" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>

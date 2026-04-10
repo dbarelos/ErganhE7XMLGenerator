@@ -50,18 +50,6 @@ namespace ErganhE7.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string kadKyria {
-            get {
-                return ((string)(this["kadKyria"]));
-            }
-            set {
-                this["kadKyria"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string kallikratisPararthmatos {
             get {
                 return ((string)(this["kallikratisPararthmatos"]));

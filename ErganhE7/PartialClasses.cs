@@ -101,7 +101,8 @@ public partial class AnaggeliaE7NType
 
         this.f_kathestosapasxolisis = (AnaggeliaE7NTypeF_kathestosapasxolisis)contract.kathestosApasxolisis;
 
-        this.f_logosperatosiscomments = contract.comments;
+        this.f_logosperatosiscomments = "";
+        if(!String.IsNullOrEmpty(contract.comments)) this.f_logosperatosiscomments = contract.comments;
     }
 }
 
