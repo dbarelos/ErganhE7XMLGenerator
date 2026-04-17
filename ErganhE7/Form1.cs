@@ -81,13 +81,13 @@ namespace ErganhE7
         {
             var e7 = new AnaggeliaE7NType();
             e7.initialize();
-            e7.f_ypiresia_oaed = AppSettings.Default.ypiresia_oaed;
-            e7.f_ypiresia_sepe = AppSettings.Default.ypiresia_sepe;
-            e7.f_kallikratis_pararthmatos = AppSettings.Default.kallikratis_pararthmatos;
-            e7.f_aa_pararthmatos = AppSettings.Default.aa_pararthmatos;
-            e7.f_yphkoothta = AppSettings.Default.yphkoothta;
-            //e7.f_afm_proswpoy = AppSettings.Default.afm_proswpoy;
-            e7.f_kad_pararthmatos = AppSettings.Default.kad_pararthmatos;
+            e7.f_ypiresia_oaed = Properties.Settings.Default.ypiresiaOaed;
+            e7.f_ypiresia_sepe = Properties.Settings.Default.ypiresiaSepe;
+            e7.f_kallikratis_pararthmatos = Properties.Settings.Default.kallikratisPararthmatos;
+            e7.f_aa_pararthmatos = Properties.Settings.Default.aaPararthmatos;
+            e7.f_yphkoothta = Properties.Settings.Default.yphkoothta;
+            //e7.f_afm_proswpoy = Properties.Settings.Default.afmProswpoy;
+            e7.f_kad_pararthmatos = Properties.Settings.Default.kadPararthmatos;
             
             return e7;
         }
