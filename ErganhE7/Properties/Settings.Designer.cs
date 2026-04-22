@@ -96,3 +96,4 @@ namespace ErganhE7.Properties {
         }
     }
 }
+

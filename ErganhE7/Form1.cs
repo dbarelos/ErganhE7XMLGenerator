@@ -3,6 +3,7 @@ using NPOI.SS.UserModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -65,8 +66,21 @@ namespace ErganhE7
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaSepe) ||
-                string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaOaed))
+
+            bool mustDoSetup = false;
+
+            try
+            {
+
+                mustDoSetup = string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaSepe) || string.IsNullOrWhiteSpace(Properties.Settings.Default.ypiresiaOaed);
+
+            }
+            catch (ConfigurationErrorsException ex)
+            {
+                mustDoSetup = true;
+            }
+
+            if (mustDoSetup)
             {
                 MessageBox.Show("Συμπληρώστε πρώτα τις βασικές ρυθμίσεις της εφαρμογής.");
 
